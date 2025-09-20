@@ -84,18 +84,7 @@ You can view it live here:
 ---
 
 
- Learning Outcomes
-
-Building and organizing a multi-page website
-
-Creating responsive layouts with CSS
-
-Adding interactivity using JavaScript
-
-Deploying a live site with GitHub Pages
-
-Structuring and documenting code for readability
-
+ 
  Author
 
 Esther Malowa
