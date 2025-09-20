@@ -1,7 +1,7 @@
 # Malowa Beauty Collections 🌸
 
 **Live Website:**  
-[https://esther-malowa.github.io/Beauty/](https://esther-malowa.github.io/Beauty/)
+[https://esther-malowa.github.io/Beauty/](https://esther-malowa.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
 ---
 
@@ -79,7 +79,7 @@ This project was built as part of a web technologies assignment to demonstrate *
 ##  Deployment
 The website is deployed using **GitHub Pages**.  
 You can view it live here:  
- [Malowa Beauty Collections](https://esther-malowa.github.io/Beauty/)
+ [Malowa Beauty Collections](https://esther-malowa.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
 ---
 
