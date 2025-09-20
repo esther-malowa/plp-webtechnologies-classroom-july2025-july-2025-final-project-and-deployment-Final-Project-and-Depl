@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <title>beauty shop</title>
+    <!--link to css -->
+    <link rel="stylesheet"href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .services {
+    padding: 50px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box i {
+    font-size: 50px;
+    color: #f9a825;
+}
+
+.service-box h3 {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f925ee;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color:#612b4c;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #888;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    
+    
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+.close:hover {
+    color: red;
+}
+.modal-content h2 {
+    text-align: center;
+    color: #e741be;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.modal-content input[type="text"],
+.modal-content input[type="email"],
+.modal-content select,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.modal-content select {
+    padding: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.modal-content textarea {
+    height: 100px;
+    resize: none; /* Prevent resize */
+}
+
+
+
+
+
+
+    </style>
+    
+        
+    </head>
+        <body>
+            <header>
+                <a href="#" class="logo"><img src="mylogo.png" alt=""></a>
+                
+                <nav>
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="shop.html">Shop</a>
+                    <a class="nav-item nav-link" href="customer.html">Customer</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </nav>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <div class="cart-icon">
+                    <i class="bx bx-cart"></i>
+                    <span id="cart-count">0</span>
+                </div>
+            </header>
+
+
+            <section class="home" id="home">
+
+                    <div class="hero">
+                        <div class="slides">
+                            <div class="slide" style="background-image: url('0.jpeg');"></div>
+                            <div class="slide" style="background-image:url('5.jpeg');"></div>
+                            <div class="slide" style="background-image: url('6.jpeg');"></div>
+                        </div>
+                    </div> 
+
+                    
+                        <div class="text" id="typing-text">
+                        <h1>Welcome To Malowa Beauty Collections!</h1>
+                        <p>Discover amazing content just tailored for you.</p>
+                        </div>
+            </section>
+            <br>
+            <a href="#services" class="btn">Our Services</a>
+
+    <!--Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class='bx bx-face'></i>
+                <h3>Skincare Treatments</h3>
+                <p>Facials, acne treatments, and anti-aging therapies to enhance your glow.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-scissors'></i>
+                <h3>Haircare Services</h3>
+                <p>Cutting-edge hairstyles, vibrant colors, and hair treatments.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-brush'></i>
+                <h3>Makeup Services</h3>
+                <p>Professional makeup for any occasion, including bridal and party looks.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-hand'></i>
+                <h3>Nail Care</h3>
+                <p>Manicures, pedicures, and stunning nail art.</p>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-leaf'></i>
+                <h3>Spa Treatments</h3>
+                <p>Relaxing massages and rejuvenating body treatments.</p>
+            </div>
+        </div>
+        <a href="#" class="btn" id="book-btn">Book Now</a>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book a Service</h2>
+            <form action="https://formspree.io/f/xrbgbjqq"method="post" id="booking-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="Skincare">Skincare Treatments</option>
+                    <option value="Haircare">Haircare Services</option>
+                    <option value="Makeup">Makeup Services</option>
+                    <option value="Nailcare">Nail Care</option>
+                    <option value="Spa">Spa Treatments</option>
+                </select>
+                <textarea name="message" placeholder="Any special requests"></textarea>
+                <input type="submit" value="Book Now" class="btn">
+            </form>
+        </div>
+    </div>
+    
+            
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-row">
+                        <!-- About Section -->
+                        <div class="footer-col">
+                            <h4>Malowa Beauty Collections</h4>
+                            <p>Your one-stop shop for all your beauty needs. We offer high-quality beauty products designed to enhance your natural beauty.</p>
+                        </div>
+            
+                        <!-- Quick Links -->
+                        <div class="footer-col">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="customer.html">Customer</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Contact Info -->
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>Email: info@malowabeauty.com</li>
+                                <li>Phone: +123 456 789</li>
+                                <li>Address: 123 Beauty Street, Fashion City</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Social Media Links -->
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Malowa Beauty Collections. All Rights Reserved.</p>
+                </div>
+            </footer>
+            
+                        
+                            
+                        
+
+
+                        
+                        
+                        
+            <!--link to js-->
+            <script src="main.js"></script>
+            
+        </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>beauty shop</title>
+        <!--link to css -->
+        <link rel="stylesheet"href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    </head>
+        <body>
+            <header>
+                <a href="#" class="logo"><img src="mylogo.png" alt=""></a>
+                
+                <nav>
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="shop.html">Shop</a>
+                    <a class="nav-item nav-link" href="customer.html">Customer</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </nav>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <div class="cart-icon">
+                    <i class="bx bx-cart"></i>
+                    <span id="cart-count">0</span> <!-- Cart count badge -->
+                </div>
+            </header>
+            <section class="account-overview">
+                <h2>My Account</h2>
+                <div class="account-details">
+                    <h3>Account Details</h3>
+                    <p><strong>Name:</strong> Essy malowa</p>
+                    <p><strong>Email:</strong> malowa@example.com</p>
+                    <button onclick="editAccount()">Edit Account</button>
+                </div>
+                <section class="order-history">
+                    <h3>Order History</h3>
+                    <table>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                        </tr>
+                        <tr>
+                            <td>1023</td>
+                            <td>2024-10-01</td>
+                            <td>Shipped</td>
+                            <td>$45.00</td>
+                        </tr>
+                    </table>
+                </section>
+                <section class="wishlist">
+                    <h3>My Wishlist</h3>
+                    <div class="wishlist-items">
+                        <div class="wishlist-item">
+                            <img src="pro1.jpg" alt="Product Image">
+                            <p>Anngel Roma - $14.2</p>
+                            <button onclick="removeFromWishlist()">Remove</button>
+                        </div>
+                        
+                    </div>
+                    <section class="newsletter-subscription">
+                        <h3>Newsletter Subscription</h3>
+                        <p>Subscribe to stay updated with the latest deals and new arrivals.</p>
+                        <form id="subscription-form">
+                            <label for="subscribe">Subscribe:</label>
+                            <input type="email" id="subscribe-email" name="email" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </section>
+                
+                    <!-- Logout Button -->
+                    <div class="logout-section">
+                        <button onclick="logout()">Logout</button>
+                    </div> 
+                </section>
+            </section>
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-row">
+                        <!-- About Section -->
+                        <div class="footer-col">
+                            <h4>Malowa Beauty Collections</h4>
+                            <p>Your one-stop shop for all your beauty needs. We offer high-quality beauty products designed to enhance your natural beauty.</p>
+                        </div>
+            
+                        <!-- Quick Links -->
+                        <div class="footer-col">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="customer.html">Customer</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+            
+                        <!-- Contact Info -->
+                        <div class="footer-col">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>Email: info@malowabeauty.com</li>
+                                <li>Phone: +123 456 789</li>
+                                <li>Address: 123 Beauty Street, Fashion City</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Social Media Links -->
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class='bx bxl-facebook'></i></a>
+                                <a href="#"><i class='bx bxl-twitter'></i></a>
+                                <a href="#"><i class='bx bxl-instagram'></i></a>
+                                <a href="#"><i class='bx bxl-pinterest'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Malowa Beauty Collections. All Rights Reserved.</p>
+                </div>
+            </footer>
+            
+                        
+                            
+                        
+
+
+                        
+                        
+                        
+            <!--link to js-->
+            <script src="main.js"></script>
+            
+        </body>
+</html>
